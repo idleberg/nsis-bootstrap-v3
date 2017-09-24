@@ -21,7 +21,7 @@ footer {
   text-align: center;
   // border-top: 1px solid #e5e5e5;
   margin-bottom: 0;
-} 
+}
 
 footer a {
   color:inherit;
@@ -261,6 +261,17 @@ button.btn.btn-success.dropdown-toggle {
   border-color:transparent;
 }
 
+.btn-switch.active {
+    color: #fff;
+    background-color: @brand-success;
+    border-color: #adadad;
+}
+
+.btn-switch.active.focus, .btn-switch.active:focus, .btn-switch.active:hover, .btn-switch:active.focus, .btn-switch:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: @brand-success;
+    color: #fff;
+}
+
 /* Typography */
 
 .text-primary,
@@ -473,11 +484,25 @@ input {
 .well {
   .box-shadow(none);
   border-radius: 0;
-  background-color: #6f6171;
-  color: #fff;
-  
+  background-color: #eee;
+  color: #000;
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+
+  a, a:hover {
+      color: #000;
+      text-decoration: none;
+      font-weight: 400;
+  }
+
   legend {
     color: #fff;
+  }
+
+  .nav>li>a {
+      padding: 10px 15px 10px 0;
   }
 }
 
@@ -501,6 +526,15 @@ input {
       color: @text-color;
     }
   }
+}
+
+.modal-content {
+  border: 0;
+}
+
+.modal-header {
+  background: @body-bg;
+  color: @text-color;
 }
 
 .popover {
@@ -530,13 +564,6 @@ a {
 }
 a:hover {
     color:#6f6171;
-}
-
-.well a {
-    color: #fff;
-    &:hover {
-        color:#eee;
-    }
 }
 
 a.btn-default,
@@ -577,15 +604,15 @@ a.btn-outline-default,
        color: rgba(255,255,255, 0.5);
     }
     &:-moz-placeholder { /* Firefox 18- */
-       color: rgba(255,255,255, 0.5);  
+       color: rgba(255,255,255, 0.5);
     }
 
     &::-moz-placeholder { /* Firefox 19+ */
-       color: rgba(255,255,255, 0.5);  
+       color: rgba(255,255,255, 0.5);
     }
 
-    &:-ms-input-placeholder {  
-       color: rgba(255,255,255, 0.5);  
+    &:-ms-input-placeholder {
+       color: rgba(255,255,255, 0.5);
     }
 }
 
