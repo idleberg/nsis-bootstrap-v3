@@ -2,5 +2,6 @@ _index.html
 bower_components/
 node_modules/
 npm-debug.log*
+sitemap.xml
 todo.md
 vendor/
