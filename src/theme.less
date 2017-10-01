@@ -138,13 +138,18 @@ pre code {
   text-align: left;
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: @well-bg;
+
+.nav>li>a {
+  &:focus,
+  &:hover {
+      background-color: @well-bg;
+  }
+  &.narrow {
+    padding: 20px 2px;
+  }
 }
 
-.nav>li>a.narrow {
-    padding: 20px 2px;
-}
+
 
 /* Buttons */
 
