@@ -1,9 +1,9 @@
- /*
-  * nsis-bootstrap-v3
-  * https://github.com/idleberg/nsis-bootstrap-v3
+ /**
+  *  nsis-bootstrap-v3
+  *  https://github.com/idleberg/nsis-bootstrap-v3
   *
-  * Copyright (c) 2017 Jan T. Sott
-  * Licensed under the MIT license.
+  *  Copyright (c) 2017 Jan T. Sott
+  *  Licensed under the CC-BY-NC-SA-4.0 license.
   */
 
 const concat = require('gulp-concat');
@@ -15,8 +15,8 @@ const path = require('path');
 const watch = require('gulp-watch');
 
 // Build Tasks
-gulp.task('build:less', gulp.series( (done) => { 
-  gulp.src('src/build.less') 
+gulp.task('build:less', gulp.series( (done) => {
+  gulp.src('src/build.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
     }))
@@ -27,9 +27,9 @@ gulp.task('build:less', gulp.series( (done) => {
     done();
 }));
 
-// Build Tasks
-gulp.task('lint:less', gulp.series( (done) => { 
-  gulp.src('src/*.less') 
+// Lint Tasks
+gulp.task('lint:less', gulp.series( (done) => {
+  gulp.src('src/*.less')
     .pipe(lesshint())
     .pipe(lesshint.reporter());
 
