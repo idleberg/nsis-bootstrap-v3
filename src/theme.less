@@ -111,6 +111,7 @@ section.container {
 
   .nav>li>a {
     padding: 20px 10px;
+  }
 }
 
 .navbar-fixed-top {
@@ -119,16 +120,21 @@ section.container {
 
 .navbar-default {
   z-index:2;
-}
 
-.navbar-default .navbar-toggle {
-  border-color: 0;
-  border: 0;
-  color: #fff;
-}
+  .nav>li>a {
+      padding: 20px 10px;
+  }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: transparent;
+  .navbar-toggle {
+    border-color: 0;
+    border: 0;
+    color: #fff;
+  }
+
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: transparent;
+  }
 }
 
 .dropdown-menu {
