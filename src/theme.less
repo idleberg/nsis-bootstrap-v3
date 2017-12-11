@@ -167,6 +167,11 @@ section.container {
 
   &>li>a {
     padding: 2px 10px;
+
+    &.active {
+        background: #cbcbcb;
+        border-radius: 2px;
+    }
   }
 
   &>li>a:focus,
@@ -177,6 +182,7 @@ section.container {
 
   input {
     background: #eee;
+    border-bottom: 1px solid #cbcbcb;
     margin-bottom: 2em;
   }
 }
@@ -560,11 +566,6 @@ input {
       font-weight: 400;
   }
 
-  .sticky {
-    position: sticky;
-    top: 60px;
-  }
-
   legend {
     color: #fff;
   }
@@ -582,6 +583,11 @@ input {
     }
   }
 }
+
+.sticky {
+    position: sticky;
+    top: 60px;
+  }
 
 .modal {
   &-header {
