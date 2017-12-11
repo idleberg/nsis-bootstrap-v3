@@ -165,14 +165,15 @@ section.container {
 .nav-filter {
   margin-top: 1.2em;
 
-  &>li>a {
-    padding: 2px 10px;
+  &>li.active {
+    background: #cbcbcb;
+    border-radius: 2px;
 
-    &.active {
-        background: #cbcbcb;
-        border-radius: 2px;
+    &>a {
+      padding: 2px 10px;
     }
   }
+
 
   &>li>a:focus,
   &>li>a:hover {
